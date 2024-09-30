@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,12 +41,12 @@ nav ul li a:hover {
 main {
     padding: 2rem;
     text-align: left;
-    min-height: calc(100vh - 140px); /* Ajustamos el espacio para que se vea todo */
+    min-height: calc(100vh - 140px); 
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Estilos del formulario */
+
 form {
     display: flex;
     flex-direction: column;
@@ -55,9 +55,9 @@ form {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    max-width: 500px; /* Tamaño más reducido */
-    margin: 0 auto; /* Centra el formulario */
-    font-size: 14px; /* Tamaño de texto más pequeño */
+    max-width: 500px; 
+    margin: 0 auto; 
+    font-size: 14px; 
 }
 
 label {
@@ -75,10 +75,10 @@ select {
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
-    font-size: 14px; /* Texto ajustado */
+    font-size: 14px; 
 }
 
-/* Opciones de radio y checkbox en línea */
+
 fieldset {
     border: none;
     padding: 0;
@@ -92,8 +92,8 @@ fieldset p {
 
 .inline-options {
     display: flex;
-    gap: 20px; /* Espacio entre opciones */
-    flex-wrap: wrap; /* Permite que las opciones se acomoden si no caben en una fila */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .inline-options label {
