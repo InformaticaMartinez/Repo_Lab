@@ -1,8 +1,10 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -17,17 +19,18 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #b4b1b1;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 10px 15px;
     display: inline-block;
 }
 
@@ -36,9 +39,93 @@ nav ul li a:hover {
 }
 
 main {
+    padding: 2rem;
+    text-align: left;
+    min-height: calc(100vh - 140px); /* Ajustamos el espacio para que se vea todo */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 1rem;
-    text-align: center;
-    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 500px; /* Tamaño más reducido */
+    margin: 0 auto; /* Centra el formulario */
+    font-size: 14px; /* Tamaño de texto más pequeño */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px; /* Texto ajustado */
+}
+
+/* Opciones de radio y checkbox en línea */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset p {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.inline-options {
+    display: flex;
+    gap: 20px; /* Espacio entre opciones */
+    flex-wrap: wrap; /* Permite que las opciones se acomoden si no caben en una fila */
+}
+
+.inline-options label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"], 
+button {
+    background-color: #1b8fee;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #1580d4;
+}
+
+input[type="tel"]::placeholder {
+    color: #aaa;
+    font-style: italic;
 }
 
 footer {
@@ -46,7 +133,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
