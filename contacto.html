@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Página Personal de Julio Nicolas Martinez</h1>
+    <header class="header-fijo">
+        <div class="titulo-logo">
+            <h1 class="titulo-principal">Página Personal de Julio Nicolas Martinez</h1>
+            <img src="./img/logo_curza.png" alt="Logo CURZA" class="logo-animado">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="acercade.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -94,7 +96,7 @@
             <!-- Tabla vacía -->
             <div style="flex: 1; margin-left: 20px;">
                 <h2>Datos del Formulario</h2>
-                <table border="1" style="width: 100%; border-collapse: collapse;">
+                <table >
                     <tr>
                         <th>Campo</th>
                         <th>Valor</th>
@@ -131,14 +133,7 @@
                         <td>Código Postal</td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>Método preferido de contacto</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tipo de suscripción</td>
-                        <td></td>
-                    </tr>
+                   
                 </table>
             </div>
         </section>
@@ -147,5 +142,6 @@
     <footer>
         <p>&copy; 2024 Martinez Informatica - UNCO - Dirección: Monseñor Esandi y Ricardo Balbín, Viedma, Río Negro</p>
     </footer>
+    <a href="#top" class="flecha-arriba">Arriba</a>
 </body>
 </html>

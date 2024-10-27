@@ -7,29 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Página Personal de Julio Nicolas Martinez</h1>
+    <header class="header-fijo">
+        <div class="titulo-logo">
+            <h1 class="titulo-principal">Página Personal de Julio Nicolas Martinez</h1>
+            <img src="./img/logo_curza.png" alt="Logo CURZA" class="logo-animado">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="acercade.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Acerca de mí</h2>
+        <section class="sticky-container">
+            <h2 class="sticky-title">Acerca de mí</h2>
             <p>Soy estudiante de informática en la Universidad Nacional del Comahue (UNCO). Me apasiona la tecnología y el desarrollo de software.</p>
             <p>En esta página comparto mis proyectos, ideas y algunos datos personales relacionados con mi trayectoria académica y profesional.</p>
-            <img src="./img/foto.jpg" alt="Foto de Nombre Apellido" width="300">
+            <img src="./img/foto.jpg" alt="Foto de Julio Martinez" width="300">
         </section>
     </main>
 
     <footer>
         <p>&copy;- 2024 Martinez Informatica - UNCO - Dirección: Monseñor Esandi y Ricardo Balbín, Viedma, Río Negro</p>
     </footer>
+    <a href="#top" class="flecha-arriba">Arriba</a>
 </body>
 </html> 

@@ -7,43 +7,74 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+.header-fijo {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #1b8fee;
     color: white;
-    padding: 1rem;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.header-fijo nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #b4b1b1;
-    text-align: center;
 }
 
-nav ul li {
-    display: inline-block;
+.header-fijo nav ul li {
+    display: inline;
     margin-right: 10px;
 }
 
-nav ul li a {
+.header-fijo nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
 }
 
 nav ul li a:hover {
-    background-color: #1b8fee;
+    background-color: #1d06f1;
+}
+.titulo-logo {
+    display: flex;
+    align-items: center;
 }
 
+.titulo-principal {
+    margin-right: 10px;
+}
+
+.logo-animado {
+    width: 50px;
+    animation: giro 5s infinite;
+}
+
+@keyframes giro {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
 main {
-    padding: 2rem;
-    text-align: left;
+    padding: 5rem;
+    text-align: center;
     min-height: calc(100vh - 140px); 
     width: 100%;
     box-sizing: border-box;
+}
+.sticky-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 0.5em;
 }
 
 
@@ -127,30 +158,12 @@ input[type="tel"]::placeholder {
     color: #aaa;
     font-style: italic;
 }
-table {
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-    
-    table, th, td {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: left;
-    }
-    
-    th {
-        background-color: #f2f2f2;
-    }
-    
-    td {
-        background-color: #fff;
-    }
-}
+
 
 table, th, td {
     border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
     padding: 10px;
     text-align: left;
 }
@@ -164,11 +177,26 @@ td {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1b8fee;
     color: white;
     text-align: center;
     padding: 1rem;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+.flecha-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #052c57;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.flecha-arriba:hover {
+    background-color: #007BFF;
 }
