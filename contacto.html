@@ -26,7 +26,7 @@
             <!-- Formulario de Contacto -->
             <div style="flex: 1;">
                 <h2>Formulario de Contacto</h2>
-                <form>
+                <form id="contactForm">
                     <!-- Nombre -->
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
@@ -71,9 +71,9 @@
                     <fieldset>
                         <p>Método preferido de contacto:</p>
                         <div class="inline-options">
-                            <label><input type="radio" id="emailContacto" name="contacto" value="email" checked> Correo electrónico</label>
-                            <label><input type="radio" id="postal" name="contacto" value="postal"> Correo postal</label>
-                            <label><input type="radio" id="telefonoContacto" name="contacto" value="telefono"> Teléfono</label>
+                            <label><input type="radio" name="contacto" value="Correo electrónico" checked> Correo electrónico</label>
+                            <label><input type="radio" name="contacto" value="Correo postal"> Correo postal</label>
+                            <label><input type="radio" name="contacto" value="Teléfono"> Teléfono</label>
                         </div>
                     </fieldset>
 
@@ -81,15 +81,12 @@
                     <fieldset>
                         <p>Tipo de suscripción:</p>
                         <div class="inline-options">
-                            <label><input type="checkbox" id="noticias" name="suscripcion" value="noticias"> Noticias</label>
-                            <label><input type="checkbox" id="promociones" name="suscripcion" value="promociones"> Promociones</label>
-                            <label><input type="checkbox" id="alertas" name="suscripcion" value="alertas" checked> Alertas</label>
-                            <label><input type="checkbox" id="eventos" name="suscripcion" value="eventos"> Eventos</label>
+                            <label><input type="checkbox" name="suscripcion" value="Noticias"> Noticias</label>
+                            <label><input type="checkbox" name="suscripcion" value="Promociones"> Promociones</label>
+                            <label><input type="checkbox" name="suscripcion" value="Alertas"> Alertas</label>
+                            <label><input type="checkbox" name="suscripcion" value="Eventos"> Eventos</label>
                         </div>
                     </fieldset>
-
-                    <!-- Botón de cargar -->
-                    <button type="submit">Cargar</button>
                 </form>
             </div>
 
@@ -103,35 +100,35 @@
                     </tr>
                     <tr>
                         <td>Nombre</td>
-                        <td></td>
+                        <td id="nombreCell"></td>
                     </tr>
                     <tr>
                         <td>Apellido</td>
-                        <td></td>
+                        <td id="apellidoCell"></td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td></td>
+                        <td id="emailCell"></td>
                     </tr>
                     <tr>
                         <td>Teléfono</td>
-                        <td></td>
+                        <td id="telefonoCell"></td>
                     </tr>
                     <tr>
                         <td>Edad</td>
-                        <td></td>
+                        <td id="edadCell"></td>
                     </tr>
                     <tr>
                         <td>Dirección</td>
-                        <td></td>
+                        <td id="direccionCell"></td>
                     </tr>
                     <tr>
                         <td>Provincia</td>
-                        <td></td>
+                        <td id="provinciaCell"></td>
                     </tr>
                     <tr>
                         <td>Código Postal</td>
-                        <td></td>
+                        <td id="codigoPostalCell"></td>
                     </tr>
                     
                 </table>
@@ -143,5 +140,7 @@
         <p>&copy; 2024 Martinez Informatica - UNCO - Dirección: Monseñor Esandi y Ricardo Balbín, Viedma, Río Negro</p>
     </footer>
     <a href="#top" class="flecha-arriba">Arriba</a>
+    <script src="script.js"></script>
+
 </body>
 </html>
