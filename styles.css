@@ -7,6 +7,20 @@ body {
     background-color: #f4f4f4;
 }
 
+.image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#comicImage {
+    max-width: 702%; 
+    height: auto;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
 .header-fijo {
     position: fixed;
     top: 0;
@@ -51,7 +65,7 @@ nav ul li a:hover {
 
 .logo-animado {
     width: 50px;
-    animation: giro 5s infinite;
+    animation: giro 5s 1;
 }
 
 @keyframes giro {
@@ -75,6 +89,13 @@ main {
     top: 0;
     background-color: #f1f1f1;
     padding: 0.5em;
+}
+.resume-summary {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -175,6 +196,7 @@ th {
 td {
     background-color: #fff;
 }
+
 
 footer {
     background-color: #1b8fee;
