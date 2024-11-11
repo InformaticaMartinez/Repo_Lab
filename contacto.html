@@ -14,9 +14,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acercade.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="juego.html">Juego</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +30,7 @@
                 <form id="contactForm">
                     <!-- Nombre -->
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+                    <input type="text" id="nombre" name="nombre"  maxlength="20" required><br>
 
                     <!-- Apellido -->
                     <label for="apellido">Apellido:</label>
@@ -70,21 +71,21 @@
                     <!-- Método de contacto -->
                     <fieldset>
                         <p>Método preferido de contacto:</p>
-                        <div class="inline-options">
-                            <label><input type="radio" name="contacto" value="Correo electrónico" checked> Correo electrónico</label>
-                            <label><input type="radio" name="contacto" value="Correo postal"> Correo postal</label>
-                            <label><input type="radio" name="contacto" value="Teléfono"> Teléfono</label>
+                        <div  class="inline-options">
+                            <label><input id="contacto" type="radio" name="contacto" value="Correo electrónico" checked> Correo electrónico</label>
+                            <label><input id="contacto" type="radio" name="contacto" value="Correo postal"> Correo postal</label>
+                            <label><input id="contacto" type="radio" name="contacto" value="Teléfono"> Teléfono</label>
                         </div>
                     </fieldset>
 
                     <!-- Tipo de suscripción -->
                     <fieldset>
-                        <p>Tipo de suscripción:</p>
-                        <div class="inline-options">
-                            <label><input type="checkbox" name="suscripcion" value="Noticias"> Noticias</label>
-                            <label><input type="checkbox" name="suscripcion" value="Promociones"> Promociones</label>
-                            <label><input type="checkbox" name="suscripcion" value="Alertas"> Alertas</label>
-                            <label><input type="checkbox" name="suscripcion" value="Eventos"> Eventos</label>
+                        <p >Tipo de suscripción:</p>
+                        <div  class="inline-options">
+                            <label><input id="suscripcion" type="checkbox" name="suscripcion" value="Noticias"> Noticias</label>
+                            <label><input id="suscripcion" type="checkbox" name="suscripcion" value="Promociones"> Promociones</label>
+                            <label><input id="suscripcion" type="checkbox" name="suscripcion" value="Alertas"> Alertas</label>
+                            <label><input id="suscripcion" type="checkbox" name="suscripcion" value="Eventos"> Eventos</label>
                         </div>
                     </fieldset>
                 </form>
@@ -130,6 +131,12 @@
                         <td>Código Postal</td>
                         <td id="codigoPostalCell"></td>
                     </tr>
+                    <td>Método preferido de contacto</td>
+                        <td id="contactoCell"></td>
+                    </tr>
+                    <tr>
+                        <td>Tipo de suscripción</td>
+                        <td id="suscripcionCell"></td>
                     
                 </table>
             </div>

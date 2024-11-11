@@ -196,7 +196,66 @@ th {
 td {
     background-color: #fff;
 }
+.game-section {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
 
+.game-section {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.game-section h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.choice-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.choice-btn img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.choice-btn span {
+    font-weight: bold;
+    color: #333;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #555;
+    font-weight: bold;
+}
 
 footer {
     background-color: #1b8fee;

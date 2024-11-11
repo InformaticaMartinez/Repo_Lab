@@ -45,3 +45,26 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("suscripcionCell").textContent = selectedCheckboxes.join(", ");
     }
 });
+
+function playGame(playerChoice) {
+    const choices = ['piedra', 'papel', 'tijera'];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    let resultMessage = '';
+
+    if (playerChoice === computerChoice) {
+        resultMessage = 'Empate. Ambos eligieron ' + playerChoice;
+    } else if (
+        (playerChoice === 'piedra' && computerChoice === 'tijera') ||
+        (playerChoice === 'papel' && computerChoice === 'piedra') ||
+        (playerChoice === 'tijera' && computerChoice === 'papel')
+    ) {
+        resultMessage = '¡Ganaste! Elegiste ' + playerChoice + ' y la computadora eligió ' + computerChoice;
+    } else {
+        resultMessage = 'Perdiste. Elegiste ' + playerChoice + ' y la computadora eligió ' + computerChoice;
+    }
+
+    document.getElementById('resultado').textContent = resultMessage;
+}
+
+
+

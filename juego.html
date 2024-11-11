@@ -25,21 +25,33 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section>
-            <h2>Bienvenidos a mi página personal</h2>
-            <p>En esta página encontrarás información sobre mí y mis proyectos.</p>
-            <div>
-                <img src="./img/Gabino.jpg" alt="Comic de Gabino" id="comicImage">
+        <section class="game-section">
+            <h2>Selecciona tu opción</h2>
+            <div class="choices">
+                <button onclick="playGame('piedra')" class="choice-btn">
+                    <img src="./img/Piedra.jpg" alt="Piedra">
+                    
+                </button>
+                <button onclick="playGame('papel')" class="choice-btn">
+                    <img src="./img/Papel.jpg" alt="Papel">
+                    
+                </button>
+                <button onclick="playGame('tijera')" class="choice-btn">
+                    <img src="./img/Tijera.jpg" alt="Tijera">
+                    
+                </button>
             </div>
+            <div id="resultado" class="result"></div>
         </section>
     </main>
-    
+
     <footer>
-        <p>&copy;- 2024 Martinez Informatica - UNCO - Dirección: Monseñor Esandi y Ricardo Balbín, Viedma, Río Negro</p>
-       
-     </footer>
-     <a href="#top" class="flecha-arriba">Arriba</a>
+    <p>&copy;- 2024 Martinez Informatica - UNCO - Dirección: Monseñor Esandi y Ricardo Balbín, Viedma, Río Negro</p>
+   
+ </footer>
+ <a href="#top" class="flecha-arriba">Arriba</a>
+    <script src="script.js"></script>
 </body>
 </html>
